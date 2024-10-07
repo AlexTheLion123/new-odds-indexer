@@ -1,0 +1,23 @@
+type Core_OddsChanged {
+  id: ID!
+  conditionId: BigInt!
+  newOdds: [BigInt!]!
+}
+
+type FreeBet_NewBet {
+  id: ID!
+  freeBetId: BigInt!
+  core: String!
+  bettor: String!
+  azuroBetId: BigInt!
+  amount: BigInt!
+  minOdds: BigInt!
+  expiresAt: BigInt!
+}
+
+type PrematchCore_OddsChanged {
+  id: ID!
+  conditionId: BigInt!
+  newOdds: [BigInt!]!
+}
+
