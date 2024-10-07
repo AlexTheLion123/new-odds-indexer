@@ -16,10 +16,10 @@ networks:
     handler: src/EventHandlers.ts
     events:
     - event: NewBet(uint256 indexed freeBetId, address core, address indexed bettor, uint256 indexed azuroBetId, uint128 amount, uint64 minOdds, uint64 expiresAt)
-  - name: Core
-    address:
-    - 0xC95C831c7bDb0650b8cD5F2a542b263872d8ed0e
-    handler: src/EventHandlers.ts
-    events:
-    - event: OddsChanged(uint256 indexed conditionId, uint64[2] newOdds)
+  # - name: Core
+  #   address:
+  #   - 0xC95C831c7bDb0650b8cD5F2a542b263872d8ed0e
+  #   handler: src/EventHandlers.ts
+  #   events:
+  #   - event: OddsChanged(uint256 indexed conditionId, uint64[2] newOdds)
 rollback_on_reorg: false

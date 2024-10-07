@@ -2,7 +2,7 @@
  * Please refer to https://docs.envio.dev for a thorough guide on all Envio indexer features
  */
 import {
-  Core,
+  // Core,
   Core_OddsChanged,
   FreeBet,
   FreeBet_NewBet,
@@ -10,15 +10,15 @@ import {
   PrematchCore_OddsChanged,
 } from "generated";
 
-Core.OddsChanged.handler(async ({ event, context }) => {
-  const entity: Core_OddsChanged = {
-    id: `${event.chainId}_${event.block.number}_${event.logIndex}`,
-    conditionId: event.params.conditionId,
-    newOdds: event.params.newOdds,
-  };
+// Core.OddsChanged.handler(async ({ event, context }) => {
+//   const entity: Core_OddsChanged = {
+//     id: `${event.chainId}_${event.block.number}_${event.logIndex}`,
+//     conditionId: event.params.conditionId,
+//     newOdds: event.params.newOdds,
+//   };
 
-  context.Core_OddsChanged.set(entity);
-});
+//   context.Core_OddsChanged.set(entity);
+// });
 
 FreeBet.NewBet.handler(async ({ event, context }) => {
   const entity: FreeBet_NewBet = {
