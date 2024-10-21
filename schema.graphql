@@ -5,7 +5,7 @@ type Core_OddsChanged {
 }
 
 type FreeBet_NewBet {
-  id: ID!
+  id: ID! 
   freeBetId: BigInt!
   core: String!
   bettor: String!
