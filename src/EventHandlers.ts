@@ -44,7 +44,7 @@ PrematchCore.OddsChanged.handler(async ({ event, context }) => {
     newOdds: event.params.newOdds,
     blockNumber: event.block.number,
     blockTimestamp: event.block.timestamp,
-  }; 
+  };
 
   context.PrematchCore_OddsChanged.set(entity);
 });
