@@ -13,11 +13,15 @@ type FreeBet_NewBet {
   amount: BigInt!
   minOdds: BigInt!
   expiresAt: BigInt!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
 }
 
 type PrematchCore_OddsChanged {
   id: ID!
-  conditionId: BigInt!
+  conditionId: BigInt! @index
   newOdds: [BigInt!]!
+  blockNumber: Int!
+  blockTimestamp: Int!
 }
 
